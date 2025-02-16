@@ -1,0 +1,69 @@
+#tittle {
+    color: purple;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+
+}
+
+label {
+    color: white;
+    border: 5px black groove;
+    text-align: center;
+
+
+}
+
+section {
+    color: blue;
+    background-color: black;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    border: 5px black groove;
+    width: 150px;
+
+}
+
+#Albums {
+    border: 5px gray inset;
+    width: 115px;
+    /* border-style: outset;
+    border-color: blue;
+    border-radius: 5px;
+    border-width:  3px; */
+}
+
+footer{
+    background-color: black;
+}
+
+a:link{
+    color: blue;
+}
+a:visited {
+    color:  #dd0000;
+}
+a:hover{
+    color: silver;
+}
+a:active{
+    color: blueviolet;
+}
+
+/*
+dotted
+dashed solid
+double
+groove
+ridge
+inset
+outset
+none
+hidden
+*/
