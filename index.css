@@ -1,22 +1,34 @@
 header {
     margin: 0;
+    width: 100%;
+    /* Hace que el header ocupe todo el ancho */
     background-color: #364552;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 3rem 0;
+    /* Evita agregar espacio extra a los lados */
 }
 
 header h1 {
     font-size: 3rem;
 }
 
+html,
 body {
-    margin: 0;
-    color: white;
-    background-color: black;
-    margin: 0 auto;
-    text-align: left;
-    font-size: 1rem;
+    overflow-x: hidden;
+    width: 100%;
 }
+
+body {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
 
 p {
     margin: 10px 32rem;
@@ -24,6 +36,7 @@ p {
 }
 
 #Songs {
+    background-color: #011010;
     font-size: 20px;
 }
 
@@ -37,20 +50,10 @@ p {
     text-shadow: 3px 4px 5px purple;
 }
 
-#container {
+/* #container {
     width: 400px;
-    margin: 0 3rem;
-}
-
-#list {
-    /* border-style: outset; */
-    /* border-color: silver; */
-    width: 30rem;
-    background-color: #011010;
-    margin: 2rem 30px;
-    border-radius: 0.5rem;
-    padding: 0 5rem;
-}
+    background-color: #262328;
+} */
 
 #trueBgnd {
     background-color: #011010;
@@ -84,19 +87,21 @@ h2 {
     border: 5px #fefefe inset;
     font-size: 25px;
     width: 15rem;
-    margin: 0 30rem;
+    margin: 0 31rem;
     padding: 10px 5px;
 }
 
 #songsList {
     font-size: 20px;
-    width: 180px;
-    padding: 5px;
+    width: 190px;
+    padding: 15px;
     margin: 0 32rem;
-    text-align: center;
+    text-align: left;
 }
 
 footer {
+    width: 100%;
+    /* Asegura que ocupe todo el ancho */
     background-color: black;
     padding: 20px;
     text-align: center;
@@ -104,8 +109,13 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* Espaciado entre los botones */
+    /* Espaciado entre los elementos */
+    position: relative;
+    /* O usa fixed si lo quieres siempre visible */
+    bottom: 0;
 }
+
+
 
 /* 🔹 Estilos de los botones dentro del footer */
 footer h3 {
