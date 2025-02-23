@@ -29,7 +29,6 @@ body {
     text-align: center;
 }
 
-
 p {
     margin: 10px 32rem;
     text-align: left;
@@ -50,12 +49,20 @@ p {
     text-shadow: 3px 4px 5px purple;
 }
 
-/* #container {
-    width: 400px;
-    background-color: #262328;
-} */
+#titleStories {
+    color: white;
+    text-shadow: 3px 4px 5px red;
+}
 
-#trueBgnd {
+#titleTim {
+    color: white;
+    text-shadow: 3px 4px 5px gray;
+}
+
+
+#trueBgnd,
+#storiesBgnd,
+#timBgnd {
     background-color: #011010;
     text-align: left;
     font-size: 20px;
