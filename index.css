@@ -1,31 +1,62 @@
-header {
+html {
+    width: 100%;
+}
+
+#header {
     margin: 0;
+    /* Ajusta según lo que necesites */
     width: 100%;
     background-color: #364552;
     text-align: center;
     padding: 3rem 0;
+    font-size: 25px;
 }
 
-header h1 {
-    font-size: 3rem;
+
+#title {
+    color: white;
+    text-shadow: 3px 4px 5px blue;
 }
 
-html,
 body {
     overflow-x: hidden;
-    width: 100%;
-}
-
-body {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    align-items: center;
     text-align: center;
 }
+
+#Albums {
+    text-align: center;
+    /* width: 50%; */
+    /* border: 5px silver outset; */
+    width: 20rem;
+    margin: 0;
+    text-align: left;
+    /* font-size: 20px; */
+}
+
+#olAlb {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#songsList {
+    font-size: 25px;
+    width: 17rem;
+    padding: 15px;
+    margin: 0;
+    margin: 10px;
+    text-align: center;
+    list-style-type: none;
+
+}
+
 
 p {
     margin: 10px 5%;
@@ -38,10 +69,7 @@ p {
     font-size: 16px;
 }
 
-#title {
-    color: white;
-    text-shadow: 3px 4px 5px blue;
-}
+
 
 #titleTrue {
     color: white;
@@ -58,33 +86,34 @@ p {
     text-shadow: 3px 4px 5px gray;
 }
 
-#trueBgnd,
-#storiesBgnd,
-#timBgnd {
+#trueBgnd {
     background-color: #011010;
     text-align: left;
     font-size: 20px;
 }
 
-#Albums {
-    border: 5px silver outset;
-    width: 15rem;
-    margin: 3rem auto;
-    text-align: left;
-    font-size: 20px;
+#storiesBgnd {
+    padding: 3rem 0;
+    width: 100%;
+    /* height: 90vh; */
+    color: #fff;
+    background: linear-gradient(30deg, red, purple, rgb(255, 157, 0), blue);
+    background-size: 100% 100%;
+
 }
 
-/* 🔹 Estilos de etiquetas */
-label {
-    color: blue;
-    border: 5px black groove;
-    text-align: left;
+#headerStories {
+    margin: 0;
+    /* padding: 3rem 0; */
+    width: 100%;
+    /* margin-top: 3rem; */
+    text-align: center;
+    font-size: 25px;
 }
 
-#homeButton {
-    width: 80px;
-    padding: 5px;
-}
+
+
+
 
 /* 🔹 Secciones */
 h2 {
@@ -94,14 +123,7 @@ h2 {
     width: 15rem;
     margin: 0 auto;
     padding: 10px 5px;
-}
-
-#songsList {
-    font-size: 20px;
-    width: 190px;
-    padding: 15px;
-    margin: 0 auto;
-    text-align: left;
+    width: auto;
 }
 
 footer {
@@ -132,19 +154,19 @@ footer button {
     transition: 0.3s;
 }
 
-footer a {
-    text-decoration: none;
-}
-
 footer button:hover {
     background-color: silver;
     color: black;
 }
 
-/* 🔹 Buscador */
-#search {
-    text-align: center;
+
+#homeButton {
+    width: 80px;
+    padding: 5px;
 }
+
+
+
 
 /* 🔹 Estilos para enlaces */
 a:link {
@@ -168,16 +190,32 @@ a:active {
     p {
         margin: 10px 10px;
     }
-
-    h2 {
-        width: auto;
-        font-size: 22px;
-        padding: 10px;
-    }
-
-    #Albums, #songsList {
-        width: auto;
-        margin: 10px;
-        text-align: center;
-    }
 }
+
+
+/* section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg,red,blue,green,black);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+h1{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    border: solid 3px #fff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem 3rem;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+} */
