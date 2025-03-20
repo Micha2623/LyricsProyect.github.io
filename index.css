@@ -44,6 +44,13 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Opcional: centra los elementos */
+    gap: 10px; /* Opcional: espacio entre elementos */
+}
+
+#olAlb li {
+    display: inline;
 }
 
 #songsList {
