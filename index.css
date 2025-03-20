@@ -93,11 +93,10 @@ p {
 }
 
 #storiesBgnd {
-    flex: 1;
-    /* Permite que el contenido ocupe el espacio disponible */
+    flex: 1; /* Permite que el contenido ocupe el espacio disponible */
     width: 100%;
     color: #fff;
-    background: linear-gradient(30deg, red, purple, rgb(255, 157, 0), blue);
+    background: linear-gradient(45deg, blue, purple,red, rgb(255, 157, 0),yellow);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -105,14 +104,35 @@ p {
     /* Centra el contenido */
 }
 
-
 #headerStories {
-    margin: 0;
-    /* padding: 3rem 0; */
+    margin-top: 50px;
     width: 100%;
-    /* margin-top: 3rem; */
     text-align: center;
     font-size: 25px;
+}
+
+#storiesBgnd a {
+    color: black;
+    /* Color normal */
+    text-decoration: none;
+    /* Opcional: quitar subrayado */
+}
+
+#storiesBgnd a:visited {
+    color: white;
+    /* Color de enlaces visitados */
+}
+
+#storiesBgnd a:hover {
+    color: purple;
+    /* Color al pasar el cursor */
+    text-decoration: underline;
+    /* Opcional: agregar subrayado */
+}
+
+#storiesBgnd a:active {
+    color: green;
+    /* Color cuando se hace clic */
 }
 
 
