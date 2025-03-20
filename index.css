@@ -1,10 +1,20 @@
-html {
+/* 🔹 Configuración global */
+html, body {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
+/* 🔹 Header */
 #header {
-    margin: 0;
-    /* Ajusta según lo que necesites */
     width: 100%;
     background-color: #364552;
     text-align: center;
@@ -12,32 +22,16 @@ html {
     font-size: 25px;
 }
 
-
 #title {
     color: white;
     text-shadow: 3px 4px 5px blue;
 }
 
-body {
-    overflow-x: hidden;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    align-items: center;
-    text-align: center;
-}
-
+/* 🔹 Contenedores principales */
 #Albums {
-    text-align: center;
-    /* width: 50%; */
-    /* border: 5px silver outset; */
     width: 20rem;
-    margin: 0;
     text-align: left;
-    /* font-size: 20px; */
+    margin: 0;
 }
 
 #olAlb {
@@ -45,54 +39,39 @@ body {
     padding: 0;
     text-align: center;
     display: flex;
-    justify-content: center; /* Opcional: centra los elementos */
-    gap: 10px; /* Opcional: espacio entre elementos */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 #olAlb li {
     display: inline;
 }
 
+/* 🔹 Lista de canciones */
 #songsList {
     font-size: 25px;
     width: 17rem;
     padding: 15px;
-    margin: 0;
     margin: 10px;
     text-align: center;
     list-style-type: none;
-
 }
 
-
+/* 🔹 Texto y párrafos */
 p {
     margin: 10px 5%;
     text-align: left;
     max-width: 800px;
 }
 
+/* 🔹 Sección de letras de canciones */
 #Songs {
     background-color: #011010;
     font-size: 16px;
 }
 
-
-
-#titleTrue {
-    color: white;
-    text-shadow: 3px 4px 5px purple;
-}
-
-#titleStories {
-    color: white;
-    text-shadow: 3px 4px 5px red;
-}
-
-#titleTim {
-    color: white;
-    text-shadow: 3px 4px 5px gray;
-}
-
+/* 🔹 Fondos de secciones */
 #trueBgnd {
     background-color: #011010;
     text-align: left;
@@ -100,17 +79,17 @@ p {
 }
 
 #storiesBgnd {
-    flex: 1; /* Permite que el contenido ocupe el espacio disponible */
+    flex: 1;
     width: 100%;
     color: #fff;
-    background: linear-gradient(45deg, blue, purple,red, rgb(255, 157, 0),yellow);
+    background: linear-gradient(45deg, blue, purple, red, rgb(255, 157, 0), yellow);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Centra el contenido */
 }
 
+/* 🔹 Header de historias */
 #headerStories {
     margin-top: 50px;
     width: 100%;
@@ -118,45 +97,29 @@ p {
     font-size: 25px;
 }
 
+/* 🔹 Estilos de enlaces */
+a {
+    text-decoration: none;
+}
+
 #storiesBgnd a {
     color: black;
-    /* Color normal */
-    text-decoration: none;
-    /* Opcional: quitar subrayado */
 }
 
 #storiesBgnd a:visited {
     color: white;
-    /* Color de enlaces visitados */
 }
 
 #storiesBgnd a:hover {
     color: purple;
-    /* Color al pasar el cursor */
     text-decoration: underline;
-    /* Opcional: agregar subrayado */
 }
 
 #storiesBgnd a:active {
     color: green;
-    /* Color cuando se hace clic */
 }
 
-
-
-
-
-/* 🔹 Secciones */
-h2 {
-    text-align: center;
-    border: 5px #fefefe inset;
-    font-size: 25px;
-    width: 15rem;
-    margin: 0 auto;
-    padding: 10px 5px;
-    width: auto;
-}
-
+/* 🔹 Footer */
 footer {
     width: 100%;
     background-color: black;
@@ -166,16 +129,13 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-    position: relative;
-    bottom: 0;
 }
 
-/* 🔹 Estilos de los botones dentro del footer */
 footer h3 {
     margin: 0;
 }
 
-/* 🔹 Opcional: Mejorar el diseño de los botones */
+/* 🔹 Botones */
 footer button {
     padding: 10px 15px;
     font-size: 16px;
@@ -190,16 +150,12 @@ footer button:hover {
     color: black;
 }
 
-
 #homeButton {
     width: 80px;
     padding: 5px;
 }
 
-
-
-
-/* 🔹 Estilos para enlaces */
+/* 🔹 Estilos de enlaces */
 a:link {
     color: blue;
 }
@@ -216,37 +172,35 @@ a:active {
     color: blueviolet;
 }
 
-/* 🔹 Ajustes para que se vea bien en celulares */
+/* 🔹 Secciones */
+h2 {
+    text-align: center;
+    border: 5px #fefefe inset;  /* Aquí está el border que pediste */
+    font-size: 25px;
+    width: 15rem;
+    margin: 0 auto;
+    padding: 10px 5px;
+    width: auto;
+}
+
+/* 🔹 Media Queries para móviles */
 @media screen and (max-width: 768px) {
     p {
-        margin: 10px 10px;
+        margin: 10px;
+    }
+
+    #Albums, #songsList {
+        width: 90%;
+    }
+
+    #olAlb {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
     }
 }
-
-
-/* section{
-    width: 100%;
-    height: 100vh;
-    color: #fff;
-    background: linear-gradient(45deg,red,blue,green,black);
-    background-size: 400% 400%;
-    position: relative;
-    animation: cambiar 10s ease-in-out infinite;
-}
-h1{
-    font-size: 4rem;
-    letter-spacing: 2px;
-    border: solid 3px #fff;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 2rem 3rem;
-}
-
-@keyframes cambiar{
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
-} */
